@@ -1,0 +1,28 @@
+# Dataset configuration
+data_dir: 'data_set/data.yaml' 
+data: 'data_set'
+annotations_file: 'annotations/bbox-annotations.json'
+best_model : "runs/detect/train3/weights/best.pt"
+
+# Model configuration
+model_name: 'yolov8n.pt'  # Changed from 'yolov5s' to 'yolov8n.pt'
+num_classes: 2
+class_names: ['person', 'car']
+
+# Training configuration
+batch_size: 16
+num_workers: 4
+learning_rate: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+num_epochs: 100
+
+# Image configuration
+# img_size: 640
+
+# Inference configuration
+conf_thres: 0.25
+iou_thres: 0.45
+
+# Hardware configuration
+device: 'cpu'  # Use 'cpu' if CUDA is not available

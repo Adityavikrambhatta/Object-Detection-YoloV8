@@ -1,0 +1,7 @@
+train: /Users/aditya_vikram_bhattacharya/Documents/EV assignment/Object-Detection-YoloV8/V1/data_set/images/train
+val: /Users/aditya_vikram_bhattacharya/Documents/EV assignment/Object-Detection-YoloV8/V1/data_set/images/valid
+
+nc: 2
+names: 
+  0 : person
+  1 : car
